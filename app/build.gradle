@@ -1,0 +1,87 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
+    id 'androidx.navigation.safeargs.kotlin'
+}
+
+android {
+    namespace 'ru.tim.imagesearchapp'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "ru.tim.imagesearchapp"
+        minSdk 23
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    dataBinding {
+        enabled = true
+    }
+}
+
+ext {
+    navigationVersion = '2.5.3'
+    refreshLayoutVersion = '1.1.0'
+    constraintLayoutVersion = '2.1.4'
+    pagingVersion = '3.1.1'
+    glideVersion = '4.12.0'
+    gsonVersion = '2.9.1'
+    retrofitVersion = '2.9.0'
+    preferencesVersion = '1.2.0'
+    viewModelVersion = '2.5.1'
+    photoViewVersion = '2.3.0'
+}
+
+dependencies {
+
+    implementation 'androidx.core:core-ktx:1.9.0'
+    implementation 'androidx.appcompat:appcompat:1.5.1'
+    implementation 'com.google.android.material:material:1.7.0'
+
+    //navigation
+    implementation "androidx.navigation:navigation-fragment-ktx:$navigationVersion"
+    implementation "androidx.navigation:navigation-ui-ktx:$navigationVersion"
+
+    //views
+    implementation "androidx.swiperefreshlayout:swiperefreshlayout:$refreshLayoutVersion"
+    implementation "androidx.constraintlayout:constraintlayout:$constraintLayoutVersion"
+    implementation "com.github.chrisbanes:PhotoView:$photoViewVersion"
+
+    //pagination
+    implementation "androidx.paging:paging-runtime-ktx:$pagingVersion"
+
+    //glide
+    implementation "com.github.bumptech.glide:glide:$glideVersion"
+
+    //gson
+    implementation "com.google.code.gson:gson:$gsonVersion"
+
+    //retrofit
+    implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofitVersion"
+
+    //preferences
+    implementation "androidx.preference:preference-ktx:$preferencesVersion"
+
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.4'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0'
+}

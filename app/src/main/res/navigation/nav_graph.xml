@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/imageGalleryFragment">
+
+    <fragment
+        android:id="@+id/imageGalleryFragment"
+        android:name="ru.tim.imagesearchapp.imagegallery.ImageGalleryFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_image_gallery">
+        <action
+            android:id="@+id/actionGalleryToDetail"
+            app:destination="@id/detailImageFragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/detailImageFragment"
+        android:name="ru.tim.imagesearchapp.detailimage.DetailImageFragment"
+        tools:layout="@layout/fragment_detail_image">
+        <action
+            android:id="@+id/actionDetailToWeb"
+            app:destination="@id/webPageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/webPageFragment"
+        android:name="ru.tim.imagesearchapp.webpage.WebPageFragment"
+        tools:layout="@layout/fragment_webpage">
+        <argument
+            android:name="link"
+            app:argType="string" />
+
+    </fragment>
+</navigation>

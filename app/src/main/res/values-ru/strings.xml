@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Фотопоиск</string>
+    <string name="search_result_images">Изображения по результатам поиска</string>
+    <string name="one_of_the_images">Одно из изображений</string>
+    <string name="try_uploading_images_again">Попробовать загрузить изображения ещё раз.</string>
+    <string name="picture_image">Картинка</string>
+    <string name="main_screen_text">Ищите изображения на любую тему!</string>
+    <string name="image_search_picture">Картинка поиска изображений</string>
+    <string name="search">Поиск</string>
+    <string name="clear_search">Сбросить поиск</string>
+    <string name="error_page_image">Ошибка</string>
+    <string name="error_page_text">Не удалось загрузить изображения. Проведите вниз по экрану, чтобы попробовать загрузить их опять.</string>
+    <string name="no_images_page_text">Изображения не найдены</string>
+    <string name="no_images_page_image">Изображения не найдены</string>
+    <string name="open_web_page">Открыть веб страницу</string>
+    <string name="enlarged_image">Увеличенное изображение картинки на экране детализации.</string>
+</resources>

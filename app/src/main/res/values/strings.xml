@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">ImageSearchApp</string>
+    <string name="search_result_images">Search result images</string>
+    <string name="one_of_the_images">One of the images</string>
+    <string name="try_uploading_images_again">Try uploading images again.</string>
+    <string name="picture_image">Picture</string>
+    <string name="main_screen_text">Search for images on any topic!</string>
+    <string name="image_search_picture">Image search picture</string>
+    <string name="search">Search</string>
+    <string name="clear_search">Clear search</string>
+    <string name="error_page_image">Error</string>
+    <string name="error_page_text">Failed to load pictures. Swipe down to download the pictures again.</string>
+    <string name="no_images_page_text">Images not found</string>
+    <string name="no_images_page_image">Images not found</string>
+    <string name="open_web_page">Open web page</string>
+    <string name="enlarged_image">An enlarged image of the picture on the detail screen.</string>
+</resources>
